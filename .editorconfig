@@ -1,0 +1,26 @@
+# top-most EditorConfig file
+root = true
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*{js, html, scss}]
+charset = utf-8
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
+
+# Indentation override for all JS under lib directory
+[js/**.js]
+indent_style = space
+indent_size = 2
+
+# Indentation override for all scss under lib directory
+[css/**/**.scss]
+indent_style = space
+indent_size = 2
+
+# Indentation override for all scss under lib directory
+[**/**.html]
+indent_style = space
+indent_size = 2
