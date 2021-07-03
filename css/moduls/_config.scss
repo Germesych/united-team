@@ -28,6 +28,7 @@ html {
 }
 
 body {
+  font-family: Poppins, sans-serif;
   height: 100%;
   width: 100%;
   line-height: 1;
@@ -73,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* END Resets*/
+
 ul {
   display: block;
   list-style-type: disc;
@@ -90,5 +92,43 @@ li {
 
 ol {
   list-style-type: decimal;
+}
+
+textarea {
+  resize: none;
+}
+
+h1 {
+  font-size: 106px;
+  color: var(--title-color-lite);
+  line-height: 1.35;
+}
+
+h2 {
+  font-size: 60px;
+  color: var(--title-color);
+}
+
+h3 {
+}
+
+p {
+  font-size: 12px;
+  line-height: 1.4;
+}
+.hidden{
+  display: none !important;
+}
+.wrap {
+  max-width: 1505px;
+  width: 100%;
+  margin: 0 auto;
+}
+.btn{
+  font-family: Poppins;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 

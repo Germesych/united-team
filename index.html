@@ -15,53 +15,109 @@
 </head>
 <body>
 <header class="header" style="background-image: url('./img/header/header-bg.png')">
-  <div class="header___top">
-    <div class="header__block logo">
-      <img src="./img/header/logo.png" alt="Logo" class="header__logo logo" width="129" height="40">
-    </div>
-    <!-- /.header__block logo -->
-    <div class="header__block header__menu">
-      <nav class="nav">
-        <div class="nav__mobile" title="Открыть навигационное меню">
-          <span class="vav__burger"></span>
-          <span class="vav__burger"></span>
-          <span class="vav__burger"></span>
-        </div>
-        <ul class="nav__menu ">
-          <li class="nav__close hidden">
-            <span class="nav-mobile__close" title="Закрыть навигационное меню">
+  <div class="wrap">
+    <div class="header___top">
+      <div class="header__block logo">
+        <img src="./img/header/logo.png" alt="Logo" class="header__logo logo" width="129" height="40"/>
+      </div>
+      <!-- /.header__block logo -->
+      <div class="header__block header__menu">
+        <nav class="nav">
+          <div class="nav__burger" title="Открыть навигационное меню">
+            <span class="nav__burger-items"></span>
+            <span class="nav__burger-items"></span>
+            <span class="nav__burger-items"></span>
+          </div>
+          <ul class="nav__menu ">
+            <li class="nav__close hidden">
               &#10006;
-            </span>
-          </li>
-          <li class="nav__items current-menu-item">
-            <a href="#!" class="nav__items-link">How it Works</a>
-          </li>
-          <li class="nav__items">
-            <a href="#!" class="nav__items-link">Features</a>
-          </li>
-          <li class="nav__items">
-            <a href="#!" class="nav__items-link">Pricing</a>
-          </li>
-          <li class="nav__items">
-            <a href="#!" class="nav__items-link">Help</a>
-          </li>
-          <li class="nav__items">
-            <a href="#!" class="nav__items-link">Blog</a>
-          </li>
-        </ul>
-      </nav><!-- /.Nav -->
+            </li>
+            <li class="nav__items current-menu-item">
+              <a href="#!" class="nav__items-link">How it Works</a>
+            </li>
+            <li class="nav__items">
+              <a href="#!" class="nav__items-link">Features</a>
+            </li>
+            <li class="nav__items">
+              <a href="#!" class="nav__items-link">Pricing</a>
+            </li>
+            <li class="nav__items">
+              <a href="#!" class="nav__items-link">Help</a>
+            </li>
+            <li class="nav__items">
+              <a href="#!" class="nav__items-link">Blog</a>
+            </li>
+            <li class="nav__items log-in">
+              <button class="btn">Log In</button>
+            </li>
+            <li class="nav__items">
+              <button class="btn header-top__btn">
+                Sign Up
+                <img src="./img/icon-btn-1.png" alt="images" width="12" height="20"/>
+              </button>
+            </li>
+          </ul>
+        </nav><!-- /.Nav -->
+      </div>
+      <!-- /.header__block header__menu -->
     </div>
-    <!-- /.header__block header__menu -->
-    <div class="header__block">
-      <button class="btn log-in">Log In</button>
-      <button class="btn header__btn">
-        Sign Up
-        <img src="./img/icon-btn-1.png" alt="images" width="12.3" height="20">
-      </button>
+    <!-- /.header___top -->
+
+    <div class="header__content">
+      <div class="header__block-title">
+        <img src="./img/header/play.png" alt="images" width="134" height="134" class="header__img-play"/>
+        <h1>
+          Listen To The Beat Of The Web
+        </h1>
+        <p>
+          First template from series templates to design web pages, using components system
+        </p>
+        <button class="btn header__btn">
+          Let’s Go
+          <img src="./img/icon-btn-2.png" alt="images" width="57" height="47"/>
+        </button>
+      </div>
+      <!-- /.header__block -->
+      <div class="header__block-col">
+
+        <h2>How it works</h2>
+
+        <div class="row">
+
+          <div class="row__col">
+            <img src="./img/header/icon-1.png" alt="images" width="76" height="88"/>
+            <h3 class="row-col__title">Read it</h3>
+            <p>
+              Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna.
+            </p>
+          </div><!-- /.col-row -->
+
+          <div class="row__col">
+            <img src="./img/header/icon-2.png" alt="images" width="76" height="88"/>
+            <h3 class="row-col__title">Apply</h3>
+            <p>
+              Orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              magna dolore.
+            </p>
+          </div><!-- /.col-row -->
+
+          <div class="row__col">
+            <img src="./img/header/icon-3.png" alt="images" width="76" height="88"/>
+            <h3 class="row-col__title">Multiply</h3>
+            <p>
+              Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore orem.
+            </p>
+          </div><!-- /.col-row -->
+
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.header__block -->
     </div>
-    <!-- /.header__block -->
+    <!-- /.header__content -->
   </div>
-  <!-- /.header___top -->
+  <!-- /.wrap -->
 </header>
 <!-- /.top-header -->
 
