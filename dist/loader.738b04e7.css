@@ -1,0 +1,183 @@
+/* Loader */
+
+:root{
+    --loader-container-background: #000;
+
+    --loader-width: 200px;
+    --loader-height: 200px;
+    --loader-background: #1a1a1f;
+
+    --loader-text-font-family: consolas;
+    --loader-text-color: #03e9f4;
+    --loader-text-text-transform: uppercase;
+    --loader-text-font-size: 18px;
+    --loader-text-font-weight: bold;
+    --loader-text-letter-spacing: 2px;
+    --loader-text-animation: typing 5s steps(10) infinite;
+    --loader-text-border-right: 1px solid #03e9f4;
+    --loader-text-transition: .5s;
+
+    --loader-hover-text-color: #050801;
+    ---webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0,0,0, .4));
+    --loader-hover-background: #03e9f4;
+    --loader-hover-box-shadow: 0 0 6px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+
+    --loader-line-1-background: linear-gradient(90deg, transparent, #03e9f4);
+    --loader-line-2-background: linear-gradient(180deg, transparent, #03e9f4);
+    --loader-line-3-background: linear-gradient(270deg, transparent, #03e9f4);
+    --loader-line-4-background: linear-gradient(360deg, transparent, #03e9f4);
+}
+.loader-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--loader-container-background);
+    cursor: progress;
+    z-index: 99999;
+}
+.loader{
+    position: relative;
+    width: var(--loader-width);
+    height: var(--loader-height);
+    background: var(--loader-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    overflow: hidden;
+    -webkit-box-reflect: var(---webkit-box-reflect);
+    /* Отражение блока */
+}
+
+.loader:hover{
+    background: var(--loader-hover-background);
+    color: var(--loader-hover-text-color);
+    box-shadow: var(--loader-hover-box-shadow);
+}
+.loader span{
+    position: absolute;
+    display: block;
+}
+
+
+/* Верхний левый луч */
+.loader span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: var(--loader-line-1-background);
+    animation: animate1 2s linear infinite;
+    animation-delay: 0s;
+}
+@keyFrames animate1{
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+/* Нижний горизонтальный луч */
+.loader span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: var(--loader-line-3-background);
+    animation: animate3 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyFrames animate3{
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+
+/* Верхний правый луч*/
+.loader span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--loader-line-4-background);
+    animation: animate2 2s linear infinite;
+    animation-delay: .5s;
+}
+@keyFrames animate2{
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+
+/* Нижний левый вертикальный луч*/
+.loader span:nth-child(4){
+    top: 100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1.5s;
+}
+@keyFrames animate4{
+    0%{
+        top: 100%;
+    }
+    50%, 100%{
+        top: -100%;
+    }
+}
+
+/* Текст Loading... */
+.loader-text{
+    font-family: var(--loader-text-font-family);
+    color: var(--loader-text-color);
+    text-transform: var(--loader-text-text-transform);
+    font-size: var(--loader-text-font-size);
+    letter-spacing: var(--loader-text-letter-spacing);
+    font-weight: var(--loader-text-font-weight);
+    overflow: hidden;
+    transition: var(--loader-text-transition);
+    border-right: var(--loader-text-border-right);
+    animation: var(--loader-text-animation);
+    /* .loader-text text - "Loading..." count = 10 => step(10) */
+}
+
+@keyFrames typing{
+    0%, 90%, 100%{
+        width: 0;
+    }
+    30%, 60%{
+        width: 120px;
+    }
+}
+
+.loader:hover .loader-text{
+    color: #000;
+    border-right: 1px solid #000;
+}
+.loader-hover{
+    background: var(--loader-hover-background);
+    color: var(--loader-hover-text-color);
+    box-shadow: var(--loader-hover-box-shadow);
+}
+.loader-hover .loader-text{
+    color: #000;
+    border-right: 1px solid #000;
+}
+
+
+/*# sourceMappingURL=/loader.738b04e7.css.map */

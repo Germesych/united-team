@@ -33,6 +33,7 @@ body {
   width: 100%;
   line-height: 1;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 input, button, textarea {
@@ -74,6 +75,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* END Resets*/
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #38B7AF;
+  border-radius: 20px;
+}
 
 ul {
   display: block;

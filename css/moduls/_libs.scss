@@ -1,0 +1,169 @@
+// Form
+:root{
+  --main-login-background: #38B7AF;
+  --main-login-active: #FB6363;
+  --main-login-input-sabmit-singin: #38B7AF;
+  --main-login-input-sabmit-singup:  #FB6363;
+  --container-log-in-blue-bg-background: rgba(255,255,255, .2);
+  --container-log-in-blue-bg-box-shadow: 0 5px 45px rgba(0, 0, 0, .15);
+}
+.main-login{
+  position: absolute;
+  top: -300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: var(--main-login-background);
+  padding-top: 50px;
+  padding-bottom: 250px;
+  transition: .5s;
+  z-index: 99999;
+}
+
+.main-login .container .blue-bg, .box, button, input,{
+  border-radius: 2px;
+}
+
+.main-login .container{
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 20px;
+}
+
+
+.main-login .blue-bg{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  width: 100%;
+  height: 420px;
+  background: var(--container-log-in-blue-bg-background);
+  box-shadow: var(--container-log-in-blue-bg-box-shadow);
+}
+.main-login .blue-bg .box{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-login .container .title{
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-login .blue-bg .box button{
+  cursor: pointer;
+  padding: 10px 30px;
+  background: rgba(255,255,255,.3);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+.main-login .form-bx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 45px rgba(0,0,0,.25);
+  transition: .5s ease-in-out;
+  overflow: hidden;
+  z-index: 99999;
+}
+.main-login .form-bx.active{
+  left: 50%;
+}
+.main-login.active{
+  background: var(--main-login-active);
+}
+
+.main-login .form{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 50px;
+  transition: .5s;
+}
+
+.main-login .form-bx .singin-form{
+  transition-delay: .25s;
+}
+.main-login .form-bx.active .singin-form{
+  left: -100%;
+  transition-delay: .0s;
+}
+.main-login .form-bx .singup-form{
+  left: 100%;
+  transition-delay: .0s;
+}
+
+.main-login .form-bx.active .singup-form{
+  left: 0;
+  transition-delay: .25s;
+}
+
+
+.main-login .form-bx .form form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-login .form-bx .form .title{
+  font-size: 1.5em;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-login .form-bx .form input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid #333;
+}
+
+.main-login .form-bx .form input[type="submit"]{
+  transition-delay: .25s;
+  background: var(--main-login-input-sabmit-singin);
+  border: none;
+  color: #fff;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.main-login .form-bx.active .singup-form input[type="submit"]{
+  background: var(--main-login-input-sabmit-singup);
+}
+.main-login .form-bx .form .forgot{
+  color: #333;
+}
+.main-login__close{
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+

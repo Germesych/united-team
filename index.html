@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,13 @@
   <meta property="og:image" content="./img/default.png">
   <meta name="author" content="Aleksandr Auchynnikau">
   <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/loader.css">
   <title>Title</title>
 </head>
 <body>
+<div class="main-login">
+  <div class="main-login__close">&#10006;</div>
+</div>
 <header class="header" style="background-image: url('./img/header/header-bg.png')">
   <div class="wrap">
     <div class="header___top">
@@ -47,16 +51,15 @@
             <li class="nav__items">
               <a href="#!" class="nav__items-link">Blog</a>
             </li>
-            <li class="nav__items log-in">
-              <button class="btn">Log In</button>
-            </li>
-            <li class="nav__items">
-              <button class="btn header-top__btn">
-                Sign Up
-                <img src="./img/icon-btn-1.png" alt="images" width="12" height="20"/>
-              </button>
-            </li>
           </ul>
+          <div class="nav__btn-block">
+            <button class="btn sing-in">Log In</button>
+            <button class="btn sing-up header-top__btn">
+              Sign Up
+              <img src="./img/icon-btn-1.png" alt="images" width="12" height="20"/>
+            </button>
+          </div>
+          <!-- /.nav__btn-block -->
         </nav><!-- /.Nav -->
       </div>
       <!-- /.header__block header__menu -->
@@ -65,14 +68,20 @@
 
     <div class="header__content">
       <div class="header__block-title">
-        <img src="./img/header/play.png" alt="images" width="134" height="134" class="header__img-play"/>
+        <div class="header__img-play">
+          <span></span>
+          <span></span>
+          <img src="./img/header/play.png" alt="images" width="134" height="134"/>
+        </div>
+        <!-- /.header__img-play -->
+
         <h1>
           Listen To The Beat Of The Web
         </h1>
         <p>
           First template from series templates to design web pages, using components system
         </p>
-        <button class="btn header__btn">
+        <button class="btn header__btn lets-go">
           Let’s Go
           <img src="./img/icon-btn-2.png" alt="images" width="57" height="47"/>
         </button>
@@ -121,10 +130,198 @@
 </header>
 <!-- /.top-header -->
 
-<footer class="footer">
+<section class="first">
   <div class="wrap">
-    Footer
+    <h2 class="title">Why you'll love it</h2>
+    <div class="row">
+
+      <div class="row__col">
+        <img src="./img/avatar-1.png" alt="images" width="67" height="67"/>
+        <div class="col__author">
+          <span class="col__title">Sean Farmer</span>
+          <span class="col__subtitle">CEO</span>
+        </div>
+        <div class="col__desc">
+          Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliquat enim ad minim veniam lorem ipsum dolor.
+        </div>
+      </div>
+      <!-- /.col-row -->
+
+      <div class="row__col">
+        <img src="./img/avatar-2.png" alt="images" width="67" height="67"/>
+        <div class="col__author">
+          <span class="col__title">Nick Parker</span>
+          <span class="col__subtitle">Wed-designer</span>
+        </div>
+        <div class="col__desc">
+          Orem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et magna dolore. Orem ipsum.
+        </div>
+      </div>
+      <!-- /.col-row -->
+
+      <div class="row__col">
+        <img src="./img/avatar-3.png" alt="images" width="67" height="67"/>
+        <div class="col__author">
+          <span class="col__title">Mishel Latuale</span>
+          <span class="col__subtitle">Project Manager</span>
+        </div>
+        <div class="col__desc">
+          Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna.Ipsum dolor sit amet.
+        </div>
+      </div>
+      <!-- /.col-row -->
+
+    </div>
+    <!-- /.row -->
   </div>
+  <!-- /.wrap -->
+</section>
+<!-- /.first -->
+
+<section class="second">
+  <div class="wrap">
+    <h2 class="title">Unsplash graphic</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim.
+    </p>
+  </div>
+  <!-- /.wrap -->
+  <div class="second__slider">
+
+    <!-- Slider main container -->
+    <div class="swiper-container graphic__slider">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./img/slides-1.png" alt="images" width="344" height="380">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/slides-2.png" alt="images" width="344" height="380">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/slides-3.png" alt="images" width="344" height="380">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/slides-4.png" alt="images" width="344" height="380">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/slides-5.png" alt="images" width="344" height="380">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/slides-1.png" alt="images" width="344" height="380">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/slides-2.png" alt="images" width="344" height="380">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/slides-3.png" alt="images" width="344" height="380">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/slides-4.png" alt="images" width="344" height="380">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/slides-5.png" alt="images" width="344" height="380">
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <!--      <div class="swiper-pagination"></div>-->
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+  </div>
+  <!-- /.second__slider -->
+
+</section>
+<!-- /.second -->
+
+<section class="third">
+  <div class="wrap">
+    <h2 class="title">Speed up your design process</h2>
+
+    <div class="grid">
+
+      <div class="col-grid">
+        <img src="./img/icon-1.png" alt="images" width="116" height="116" class="col-grid__img"/>
+        <div class="col-grid__text">
+          <h3 class="col-grid__title">Auto Layout</h3>
+          <p class="col-grid__text">
+            Sed do eiusmod tempor incididunt ut consectetur
+            adipisicing elit,do eiusmod tempor incididunt ut labore et dolore
+          </p>
+        </div><!-- /.col-grid__text -->
+      </div><!-- /.col -->
+
+      <div class="col-grid">
+        <img src="./img/icon-2.png" alt="images" width="116" height="116" class="col-grid__img"/>
+        <div class="col-grid__text">
+          <h3 class="col-grid__title">Variants</h3>
+          <p class="col-grid__text">
+            Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna
+          </p>
+        </div><!-- /.col-grid__text -->
+      </div><!-- /.col -->
+
+      <div class="col-grid">
+        <img src="./img/icon-3.png" alt="images" width="116" height="116" class="col-grid__img"/>
+        <div class="col-grid__text"><h3 class="col-grid__title">Components</h3>
+          <p class="col-grid__text">
+            Dor sum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore ma iusmod
+          </p>
+        </div><!-- /.col-grid__text -->
+      </div><!-- /.col -->
+
+      <div class="col-grid">
+        <img src="./img/icon-4.png" alt="images" width="116" height="116" class="col-grid__img"/>
+        <div class="col-grid__text">
+          <h3 class="col-grid__title">Atomic Design</h3>
+          <p class="col-grid__text">
+            Adipisicing elit, orem ipsum dolor sit amet, consectetur
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+          </p>
+        </div><!-- /.col-grid__text -->
+      </div><!-- /.col -->
+
+      <div class="col-grid">
+        <img src="./img/icon-5.png" alt="images" width="116" height="116" class="col-grid__img"/>
+        <div class="col-grid__text">
+          <h3 class="col-grid__title">Animated</h3>
+          <p class="col-grid__text">
+            Morem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna
+          </p>
+        </div><!-- /.col-grid__text -->
+      </div><!-- /.col -->
+
+      <div class="col-grid">
+        <img src="./img/icon-6.png" alt="images" width="116" height="116" class="col-grid__img"/>
+        <div class="col-grid__text">
+          <h3 class="col-grid__title">Responsive</h3>
+          <p class="col-grid__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna
+          </p>
+        </div><!-- /.col-grid__text -->
+      </div><!-- /.col -->
+
+    </div>
+    <!-- /.grid -->
+
+  </div>
+  <!-- /.wrap -->
+</section>
+<!-- /.third -->
+
+
+<footer class="footer">
 </footer>
 <script src="js/index.js"></script>
 </body>

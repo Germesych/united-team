@@ -1,8 +1,11 @@
 {
   "devDependencies": {
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.5",
     "sass": "^1.35.1"
   },
   "dependencies": {
-    "css": "^3.0.0"
+    "css": "^3.0.0",
+    "swiper": "^6.7.5"
   }
 }
